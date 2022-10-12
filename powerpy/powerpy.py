@@ -20,6 +20,15 @@ import requests
 
 REST_API_URL = "https://api.powerbi.com/v1.0/"
 
+def get_tenant_id(domain_name: str):
+	url = f"https://login.microsoftonline.com/{domain_name}/.well-known/openid-configuration"
+	
+	response = requests.get(url).json()
+	url = response['authorization_endpoint']
+	tenant_id = url.split('/')[3]
+	
+	return tenant_id
+
 def get_access_token(tenant_id, workspace_client_id, workspace_user, workspace_pwd):
 	auth_url = f"https://login.microsoftonline.com/{tenant_id}"
 	scopes = ["https://analysis.windows.net/powerbi/api/.default"]
