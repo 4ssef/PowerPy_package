@@ -1,2 +1,0 @@
-import msal
-import requests
