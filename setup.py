@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
 	name="ms-powerpy",
-	version="0.1.1",
+	version="0.1.2",
 	description="Easier communication between Microsoft Power BI REST API and client",
     url="https://github.com/4ssef/powerpy_package",
     author="4ssef (Fernando Assef)",
