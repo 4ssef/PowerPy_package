@@ -1,15 +1,16 @@
-from setuptools import setup, find_packages
+from setuptools import setup
+from setuptools import find_namespace_packages
 
 setup(
 	name="ms-powerpy",
-	version="0.1.2",
-	description="Easier communication between Microsoft Power BI REST API and client",
+	version="0.1.3",
+	description="Easier communication between Microsoft Power BI REST API and a client",
     url="https://github.com/4ssef/powerpy_package",
     author="4ssef (Fernando Assef)",
     author_email="fernandoassef@hotmail.com",
     license="MIT License",
-    packages=find_packages(),
-    install_requires=[],
+    packages=find_namespace_packages(),
+    install_requires=['msal', 'requests'],
 	keywords=['python', 'power bi', 'power bi rest api', 'powerbi'],
     classifiers=[
         'Development Status :: 3 - Alpha',
