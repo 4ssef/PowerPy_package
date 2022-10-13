@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 setup(
-	name="powerpy",
-	version="0.1.0",
+	name="ms-powerpy",
+	version="0.1.1",
 	description="Librería para comunicación de Power BI REST API y cliente",
     url="https://github.com/4ssef/powerpy_package",
     author="4ssef (Fernando Assef)",
