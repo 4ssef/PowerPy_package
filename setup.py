@@ -3,7 +3,7 @@ from setuptools import find_namespace_packages
 
 setup(
 	name="ms-powerpy",
-	version="0.1.3",
+	version="0.1.4",
 	description="Easier communication between Microsoft Power BI REST API and a client",
     url="https://github.com/4ssef/powerpy_package",
     author="4ssef (Fernando Assef)",
