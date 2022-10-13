@@ -10,7 +10,7 @@ setup(
     license="MIT License",
     packages=find_packages(),
     install_requires=[],
-	keywords=['python', 'power bi', 'power bi rest api', 'powerbi']
+	keywords=['python', 'power bi', 'power bi rest api', 'powerbi'],
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
