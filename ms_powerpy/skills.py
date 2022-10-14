@@ -1,4 +1,4 @@
-import powerpy
+from . import powerpy
 
 def get_token_usage(authorization):
 	url = "https://api.powerbi.com/v1.0/myorg/availableFeatures"
