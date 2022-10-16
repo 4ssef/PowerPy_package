@@ -48,3 +48,10 @@ def get_group_id_by_name(group_name: str, authorization):
 		if response['value'][i]['name'] == group_name:
 			return response['value'][i]['id']
 	return None
+
+def get_refresh_history_by_dataset_id(dataset_id, authorization):
+	url = f"https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/refreshes"
+	
+	response = powerpy.get(url, authorization).json()
+	
+	return response['value']
