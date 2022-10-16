@@ -38,3 +38,13 @@ def refresh_dataset_by_id(dataset_id, authorization):
 	url = f"https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/refreshes"
 	
 	return powerpy.post(url, authorization)
+
+def get_group_id_by_name(group_name: str, authorization):
+	url = "https://api.powerbi.com/v1.0/myorg/groups"
+	
+	response = powerpy.get(url, authorization).json()
+	
+	for i in range(response['@odata.count']):
+		if response['value'][i]['name'] == group_name:
+			return response['value'][i]['id']
+	return None
