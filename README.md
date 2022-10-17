@@ -3,7 +3,7 @@
 
 This Python package, makes communication between Microsoft Power BI REST API and a client easier.
 
-
+*Read this in other languages: [Español](https://github.com/4ssef/powerpy_package/blob/master/README_es.md).*
 
 ## Requirements
 * Python >= 3.7 and < 4
